@@ -349,6 +349,101 @@ dl  {
 }
 // contact
 
+// faq
+.faq {
+    background-color: $color-grey-dark;
+    padding: 125px 0;
+
+    &_text {
+        margin-left: auto;
+        max-width: 752px;
+
+        img {
+            display: none;
+        }
+    }
+
+    &_img {
+        @include flex-full-center();
+    }
+
+    h6 {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 29.26px;
+        letter-spacing: 1px;
+        color: $color-black;
+        text-transform: uppercase;
+    }
+
+    h3 {
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 60px;
+        text-align: left;
+        color: $color-black;
+        margin: 6px 0 22px 0;
+        text-transform: uppercase;
+    }
+
+    .accordion {
+        --bs-accordion-border-radius: none;
+        --bs-accordion-bg: transparent;
+        --bs-accordion-border-color: none;
+        --bs-accordion-border-width: none;
+    }
+
+    .accordion-item {
+        border-top: 1px solid #000000;
+
+        &:last-child {
+            border-bottom: 1px solid #000000;
+        }
+    }
+
+    .accordion-button {
+        padding: 24px 0;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 37.24px;
+        color: $color-black;
+        text-transform: uppercase;
+    }
+
+    .accordion-body {
+        padding: 0 0 24px 0;
+    }
+
+    .accordion-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+
+        svg {
+            @include transition();
+        }
+    }
+
+    .accordion-button::after {
+        display: none;
+    }
+
+    .accordion-button:not(.collapsed) + svg {
+        transform: rotate(90deg);
+    }
+
+    .accordion-button:not(.collapsed) {
+        background-color: transparent;
+    }
+
+    .accordion-button:focus {
+        box-shadow: none;
+    }
+
+}
+// faq
+
 // footer
 .footer {
     padding: 24px 0 60px 0;

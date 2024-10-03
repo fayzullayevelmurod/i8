@@ -8,6 +8,54 @@
 
 @media only screen and (max-width: 1199px) {
 
+  .faq {
+    padding: 40px 0;
+
+    &_img {
+      display: none;
+    }
+
+    &_text {
+      max-width: 100%;
+
+      img {
+        margin: 0 auto 40px auto;
+        display: block;
+      }
+    }
+
+    h6 {
+      font-size: 14px;
+      line-height: 18.62px;
+      letter-spacing: 1px;
+    }
+
+    h3 {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 40px;
+      margin: 6px 0 32px 0;
+
+      br {
+        display: none;
+      }
+    }
+
+    .accordion-header {
+      svg {
+        min-width: 48px;
+        min-height: 48px;
+      }
+    }
+
+    .accordion-button {
+      padding: 15px 0;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 26.6px;
+    }
+  }
+
   .product {
     padding: 20px 0 40px 0;
 
