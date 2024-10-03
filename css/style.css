@@ -1,8 +1,19 @@
 @font-face {
   font-family: "Involve";
-  src: url("../fonts/involve/fonts/TTF/Involve-Regular.ttf") format("ttf"), url("../fonts/involve/fonts/TTF/Involve-Medium.ttf") format("ttf"), url("../fonts/involve/fonts/TTF/Involve-Bold.ttf") format("ttf");
-  src: url("../fonts/involve/fonts/OTF/Involve-Regular.otf") format("otf"), url("../fonts/involve/fonts/OTF/Involve-Medium.otf") format("otf"), url("../fonts/involve/fonts/Involve-VF.ttf") format("ttf"), url("../fonts/involve/fonts/OTF/Involve-Bold.otf") format("otf");
-  font-weight: normal;
+  src: url("../fonts/involve2/fonts/WOFF/Involve-Regular.woff2") format("woff2"), url("../fonts/involve2/fonts/WOFF/Involve-Regular.woff") format("woff"), url("../fonts/involve2/fonts/TTF/Involve-Regular.ttf") format("truetype"), url("../fonts/involve2/fonts/OTF/Involve-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Involve";
+  src: url("../fonts/involve2/fonts/WOFF/Involve-Medium.woff2") format("woff2"), url("../fonts/involve2/fonts/WOFF/Involve-Medium.woff") format("woff"), url("../fonts/involve2/fonts/TTF/Involve-Medium.ttf") format("truetype"), url("../fonts/involve2/fonts/OTF/Involve-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Involve";
+  src: url("../fonts/involve2/fonts/WOFF/Involve-Bold.woff2") format("woff2"), url("../fonts/involve2/fonts/WOFF/Involve-Bold.woff") format("woff"), url("../fonts/involve2/fonts/TTF/Involve-Bold.ttf") format("truetype"), url("../fonts/involve2/fonts/OTF/Involve-Bold.otf") format("opentype");
+  font-weight: 700;
   font-style: normal;
 }
 * {
@@ -137,6 +148,110 @@ dl {
   max-width: 167px;
   height: 51px;
 }
+.product {
+  padding: 80px 0 90px 0;
+  background-color: #000000;
+}
+.product_in {
+  align-items: end;
+}
+.product img {
+  max-width: 688px;
+  transform: translateX(-72px);
+  margin-bottom: 41px;
+}
+.product h3 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #FFFFFF;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+}
+.product p {
+  font-size: 31px;
+  font-weight: 400;
+  line-height: 60px;
+  color: #FFFFFF;
+  margin-bottom: 100px;
+}
+.product .main_btn {
+  border-radius: 48.5px;
+  height: 80px;
+  font-size: 36px;
+  line-height: 40px;
+  gap: 14px;
+}
+
+.contact {
+  padding: 125px 0 189px 0;
+  background-color: #FC629D;
+}
+.contact_text {
+  max-width: 930px;
+}
+.contact_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact_text_img {
+  display: none;
+}
+.contact h6 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18.62px;
+  letter-spacing: 1px;
+  color: #000000;
+  text-transform: uppercase;
+}
+.contact h3 {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #000000;
+  margin: 14px 0 42px 0;
+  text-transform: uppercase;
+}
+.contact label {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #000000;
+}
+.contact input {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
+  padding-bottom: 17px;
+  border: none;
+  border-bottom: 1px solid #000000;
+  background: transparent;
+}
+.contact input::-moz-placeholder {
+  color: #000000;
+}
+.contact input::placeholder {
+  color: #000000;
+}
+.contact .form_block {
+  display: flex;
+  flex-direction: column;
+}
+.contact .main_btn {
+  margin-top: 60px;
+  background-color: #000000;
+  border-radius: 26px;
+  color: #FFFFFF;
+  width: 100%;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 29.26px;
+  height: 53px;
+}
+
 .footer {
   padding: 24px 0 60px 0;
   background-color: #000000;
@@ -193,6 +308,38 @@ dl {
   }
 }
 @media only screen and (max-width: 1199px) {
+  .product {
+    padding: 20px 0 40px 0;
+  }
+  .product h3 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  .product p {
+    font-size: 21px;
+    line-height: 27.93px;
+    margin-bottom: 30px;
+  }
+  .product .product_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .product img {
+    max-width: 100%;
+    margin-bottom: 26px;
+    transform: translateX(0);
+  }
+  .product .main_btn {
+    height: 54px;
+    font-size: 22px;
+    line-height: 29.26px;
+    border-radius: 27px;
+  }
+  .product .main_btn svg {
+    width: 24px;
+    height: 24px;
+  }
   .footer {
     padding: 24px 0 42px 0;
   }
@@ -239,5 +386,65 @@ dl {
   }
   .home_right {
     display: none;
+  }
+  .home h1 {
+    font-size: 42px;
+    line-height: 47px;
+  }
+  .home h6 {
+    font-size: 22px;
+    line-height: 29.26px;
+    margin: 3px 0 5px 0;
+  }
+  .home p {
+    font-size: 14px;
+    line-height: 18.62px;
+    margin-bottom: 30px;
+  }
+  .home .main_btn {
+    font-size: 22px;
+    line-height: 29.26px;
+    height: 50px;
+    border-radius: 27px;
+    border: 1px solid #000000;
+  }
+  .contact {
+    padding: 68px 0 80px 0;
+  }
+  .contact_text_img {
+    display: block;
+    margin-bottom: 45px;
+  }
+  .contact_img {
+    display: none;
+  }
+  .contact h6 {
+    font-size: 14px;
+    line-height: 18.62px;
+  }
+  .contact h3 {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #000000;
+    margin: 6px 0 32px 0;
+  }
+  .contact .main_btn {
+    font-size: 22px;
+    line-height: 29px;
+    margin-top: 40px;
+    border-radius: 26px;
+  }
+  .contact label {
+    font-size: 12px;
+    line-height: 26px;
+  }
+  .contact input {
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 16px;
+  }
+  .contact .form_block_two {
+    margin-top: 30px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -1,19 +1,36 @@
 // fonts
 @font-face {
     font-family: 'Involve';
-    src: url('../fonts/involve/fonts/TTF/Involve-Regular.ttf') format('ttf'),
-    url('../fonts/involve/fonts/TTF/Involve-Medium.ttf') format('ttf'),
-    url('../fonts/involve/fonts/TTF/Involve-Bold.ttf') format('ttf');
-    src: url('../fonts/involve/fonts/OTF/Involve-Regular.otf') format('otf'),
-    url('../fonts/involve/fonts/OTF/Involve-Medium.otf') format('otf'),
-    url('../fonts/involve/fonts/Involve-VF.ttf') format('ttf'),
-    url('../fonts/involve/fonts/OTF/Involve-Bold.otf') format('otf');
-    font-weight: normal;
+    src: url('../fonts/involve2/fonts/WOFF/Involve-Regular.woff2') format('woff2'),
+        url('../fonts/involve2/fonts/WOFF/Involve-Regular.woff') format('woff'),
+        url('../fonts/involve2/fonts/TTF/Involve-Regular.ttf') format('truetype'),
+        url('../fonts/involve2/fonts/OTF/Involve-Regular.otf') format('opentype');
+    font-weight: 400;
     font-style: normal;
 }
 
-// $font-Involve: 'Involve', sans-serif;
-// $font-Gilroy: "Gilroy", sans-serif;
+@font-face {
+    font-family: 'Involve';
+    src: url('../fonts/involve2/fonts/WOFF/Involve-Medium.woff2') format('woff2'),
+        url('../fonts/involve2/fonts/WOFF/Involve-Medium.woff') format('woff'),
+        url('../fonts/involve2/fonts/TTF/Involve-Medium.ttf') format('truetype'),
+        url('../fonts/involve2/fonts/OTF/Involve-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Involve';
+    src: url('../fonts/involve2/fonts/WOFF/Involve-Bold.woff2') format('woff2'),
+        url('../fonts/involve2/fonts/WOFF/Involve-Bold.woff') format('woff'),
+        url('../fonts/involve2/fonts/TTF/Involve-Bold.ttf') format('truetype'),
+        url('../fonts/involve2/fonts/OTF/Involve-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+$font-Involve: 'Involve', sans-serif;
+$font-Gilroy: "Gilroy", sans-serif;
 // fonts
 
 // colors
@@ -81,7 +98,7 @@ html {
 }
 
 body {
-    font-family: "Involve", sans-serif;
+    font-family: 'Involve', sans-serif;
     font-style: normal;
 }
 
@@ -211,6 +228,126 @@ dl  {
     }
 }
 // home
+
+// product
+.product {
+    padding: 80px 0 90px 0;
+    background-color: $color-black;
+
+    &_in {
+        align-items: end;
+    }
+
+    img {
+        max-width: 688px;
+        transform: translateX(-72px);
+        margin-bottom: 41px;
+    }
+
+    h3 {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 40px;
+        color: $color-white;
+        margin-bottom: 60px;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: 31px;
+        font-weight: 400;
+        line-height: 60px;
+        color: $color-white;
+        margin-bottom: 100px;
+    }
+
+    .main_btn {
+        border-radius: 48.5px;
+        height: 80px;
+        font-size: 36px;
+        line-height: 40px;
+        gap: 14px;
+    }
+}
+// product
+
+// contact
+.contact {
+    padding: 125px 0 189px 0;
+    background-color: $color-pink;
+
+    &_text {
+        max-width: 930px;
+    }
+
+    &_img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &_text_img {
+        display: none;
+    }
+
+    h6 {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18.62px;
+        letter-spacing: 1px;
+        color: $color-black;
+        text-transform: uppercase;
+    }
+
+    h3 {
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 60px;
+        color: $color-black;
+        margin: 14px 0 42px 0;
+        text-transform: uppercase;
+    }
+
+    label {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 26px;
+        color: $color-black;
+    }
+
+    input {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        color: $color-black;
+        padding-bottom: 17px;
+        border: none;
+        border-bottom: 1px solid $color-black;
+        background: transparent;
+    }
+
+    input::placeholder {
+        color: $color-black;
+    }
+
+    .form_block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main_btn {
+        margin-top: 60px;
+        background-color: $color-black;
+        border-radius: 26px;
+        color: $color-white;
+        width: 100%;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 29.26px;
+        height: 53px;
+    }
+}
+// contact
 
 // footer
 .footer {
