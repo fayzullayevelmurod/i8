@@ -156,7 +156,37 @@ dl  {
     gap: 7px;
     border-radius: 27px;
     background-color: $color-pink;
+    cursor: pointer;
 }
+
+// modal
+.modal {
+    &-content {
+        padding: 10px;
+    }
+
+    .btn-close {
+        position: relative;
+        z-index: 3;
+        margin-left: auto;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    input:focus {
+        border: 1px solid $color-pink;
+        box-shadow: none;
+    }
+
+    .main_btn {
+        width: 100%;
+        height: 38px;
+        font-size: 1rem;
+    }
+}
+// modal
 
 
 // header
@@ -228,6 +258,62 @@ dl  {
     }
 }
 // home
+
+// slider
+.slider {
+    background-color: $color-black;
+    padding: 75px 0;
+
+    h3 {
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 60px;
+        color: $color-pink;
+        margin-bottom: 78px;
+        text-transform: uppercase;
+    }
+
+    &_more {
+        @include flex-full-center();
+        margin-top: 75px;
+    }
+
+    .main_btn {
+        height: 59px;
+        border-radius: 27px;
+        width: 215px;
+        font-size: 22px;
+        line-height: 25.78px;
+    }
+
+    .swiper-slide {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .slider_btn {
+        position: absolute;
+        z-index: 2;
+    }
+
+    .slider-button-next {
+        right: -60px;
+    }
+
+    .slider-button-prev {
+        left: -60px;
+    }
+
+    .slider_wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+}
+// slider
 
 // product
 .product {

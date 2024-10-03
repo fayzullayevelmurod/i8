@@ -8,6 +8,31 @@
 
 @media only screen and (max-width: 1199px) {
 
+  .slider {
+    padding: 28px 0 34px 0;
+
+    h3 {
+      font-size: 35px;
+      font-weight: 700;
+      line-height: 48px;
+      margin-bottom: 80px;
+    }
+
+    .slider_more {
+      top: 90px;
+    }
+
+    .main_btn {
+      height: 50px;
+      width: 167px;
+
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
   .faq {
     padding: 40px 0;
 
